@@ -1,0 +1,136 @@
+.shopContainer .shopBanner {
+  background-image: url("https://preview.colorlib.com/theme/ogani/img/breadcrumb.jpg.webp");
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 14vw;
+  padding: 1vw 2vw;
+}
+
+.shopContainer .shopBanner h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.shopContainer .product-discount {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.shopContainer .scroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.shopContainer .products {
+  display: flex;
+  animation: scroll-left-side 20s linear infinite;
+  width: max-content;
+  will-change: transform;
+}
+
+.shopContainer .items {
+  width: 25vw;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopContainer .image-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid black; */
+}
+
+.shopContainer .overflow-icons {
+  position: absolute;
+  top: 80%;
+  display: flex;
+  gap: 5vw;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.shopContainer .items:hover .overflow-icons {
+  opacity: 1;
+}
+
+.shopContainer .overflow-icons a {
+  transition: transform 0.8s linear;
+  background-color: rgb(255, 255, 255);
+  height: 10vh;
+  width: 4vw;
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 10px;
+}
+
+.shopContainer .overflow-icons a:hover {
+  background: rgb(126, 173, 57);
+  color: white;
+  transform: rotate(360deg);
+}
+
+.shopContainer .overflow-off {
+  position: absolute;
+  background: #dd2222;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 3vh 0.8vw;
+  top: 1vh;
+  left: 1vw;
+  border-radius: 100%;
+}
+
+.shopContainer .overflow-icons a svg {
+  font-size: 25px;
+}
+
+.shopContainer .item-text h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.shopContainer .item-text .price span:nth-child(1) {
+  font-weight: 800;
+}
+
+
+.deparment ul li{
+  list-style: none;
+  padding: .5vw 0px;
+  /* border:2px solid #dd2222; */
+} .deparment ul li a{
+
+  text-decoration: none;
+  font-weight:600;
+  font-size: 1rem;
+  color: black;
+
+}
+
+h3{
+  font-weight: 800 !important;
+}
+@keyframes scroll-left-side {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,106 @@
+.footer {
+  background: rgb(243, 246, 251);
+  margin: 2vh 0px;
+  /* padding: 3vh 2vw; */
+  height: 100%;
+  display: flex;
+  width: 100vw;
+  margin: 20px 20px;
+  padding: 20px 0px;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* border: 2px solid green; */
+}
+.footer-cards{
+  display: flex;
+  /* width: 100vw; */
+  gap: 20px;
+
+}
+.footer ul li {
+  list-style: none;
+  /* gap: 10px; */
+  height: 6vh;
+  /* background-color: aqua; */
+  display: flex;
+}
+
+.footer-icons a {
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: rgb(28, 28, 28);
+  height: 10vh;
+  width: 4vw;
+}
+
+.footer-icons svg {
+  font-size: larger;
+}
+.footer-logo img {
+  margin-bottom: 3vh;
+  font-size: 12rem;
+  /* border: 2px solid black; */
+  /* height: 10vw; */
+
+  /* width: 14vw; */
+  object-fit: contain;
+  /* margin-bottom: 100px; */
+  /* background: #000; */
+}
+.footer-details ul {
+  padding-left: 5px;
+  gap: 1.5vh;
+
+  flex-direction: column;
+  /* background: #000; */
+  display: flex;
+   font-size: 4rem;
+
+}
+
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  /* background: #000; */
+  gap: 1vh;
+  padding: 0px 0px;
+
+}
+.footer-links h5{
+  font-weight: 700;
+}
+form input{
+  padding: 7px 4px;
+   border: none;
+ /* font-size:1.1rem; */
+ font-weight: 500;
+ color: black;
+   text-align: center;
+}
+form button{
+  background: rgb(126, 173, 57);
+  padding: 7px ;
+  border: none;
+color: white;
+font-weight: 600;
+}
+.footer-details ul li,.services ul li{
+  height: 20%;
+  /* border: 2px solid green; */
+  width: 100%;
+  text-align: start;
+  margin-bottom: 2px;
+  padding: 2px;
+}
+  .footer-links li{
+    /* border: 2px solid yellow; */
+    /* justify-content: start; */
+    text-align: start;
+    height: 20% !important;  margin-bottom: 2px;
+  padding: 2px;
+  }

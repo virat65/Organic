@@ -1,0 +1,35 @@
+.Banner{
+  display: flex;
+  /* border: 2px solid rgb(0, 0, 0); */
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 15vh 0vw;
+
+}
+
+.Banner img{
+  width: 40vw;
+  /* border:  2px solid blue; */
+  object-fit: cover;
+  height: 50vh;
+}
+
+@media (max-width:768px) {
+  .Banner {
+    display: flex;
+    flex-direction: column;
+    gap: 12vh;
+
+
+  }
+  .Banner img{
+  width: 80vw;
+  /* border:  2px solid blue; */
+  /* height: 80vh; */
+  /* contain: content; */
+  object-fit: cover;
+  height: 100%;
+}
+}

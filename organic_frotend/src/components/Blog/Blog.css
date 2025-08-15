@@ -1,0 +1,31 @@
+.blog {
+  margin: 4vh 0vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vh;
+}
+.blog h2 {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.blog h5 {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.card-size button {
+  margin: 10px;
+  width: 15vw;
+  border-radius: 30px;
+  color: black;
+  background: white;
+  border: 1px solid  rgb(112, 112, 112);
+  height: 4vw;
+  /* display: none; */
+}
+
+.card-size button svg{
+  font-size: 1.5rem;
+}

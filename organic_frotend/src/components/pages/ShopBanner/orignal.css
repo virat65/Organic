@@ -1,0 +1,109 @@
+.shopContainer .shopBanner {
+  background-image: url("https://preview.colorlib.com/theme/ogani/img/breadcrumb.jpg.webp");
+  width: 100vw;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 30vh;
+}
+
+.shopContainer .shopBanner h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.shopContainer .product-discount {
+  border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.shopContainer .product-discount .image-container {
+  position: relative;
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.shopContainer .overflow-icons {
+  position: absolute;
+  top: 80%;
+  display: flex;
+  gap: 5vw;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.shopContainer .overflow-icons a {
+  transition: transform 0.8s linear;
+  background-color: rgb(255, 255, 255);
+  height: 10vh;
+  width: 4vw;
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 10px;
+}
+
+.shopContainer .overflow-icons a:hover {
+  background: rgb(126, 173, 57);
+  color: white;
+  transform: rotate(360deg);
+}
+.shopContainer .overflow-off {
+  position: absolute;
+
+  background: #dd2222;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 3vh 0.8vw;
+
+  top: 1vh;
+  left: 1vw;
+  border-radius: 100%;
+}
+.shopContainer .overflow-icons a svg {
+  font-size: 25px;
+
+}
+
+.shopContainer .items {
+  border: 2px solid green;
+ animation: scroll-left-side 2s linear infinite;
+  display: flex;
+  opacity: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shopContainer .items .overflow-icons{
+  opacity: 0;
+} .items:hover .overflow-icons{
+  opacity: 1;
+}
+.shopContainer .item-text h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.shopContainer .item-text .price span:nth-child(1) {
+  font-weight: 800;
+}
+@keyframes scroll-left-side {
+  0% {
+    transform: translateX(0%);
+  }
+
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

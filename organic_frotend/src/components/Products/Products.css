@@ -1,0 +1,11 @@
+.products-card h4{
+  font-weight: 800;
+  font-size: 1.8rem;
+  /* font-style: italic; */
+
+}
+
+.products-card span{
+  font-weight: 700;
+  font-size: 1.2rem;
+} 

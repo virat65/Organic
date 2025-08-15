@@ -1,0 +1,32 @@
+img{
+  width: 20vw;
+height: 50vh;
+}
+
+
+.items{
+  /* width: 25vw; */
+  /* height: 60vh; */
+  /* width: 100px; */
+  padding: 10px;
+  /* display: flex; */
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* background: #000; */
+  align-items: center;
+border: 2px solid green;
+  /* justify-content: center; */
+  margin: 10px;
+}
+
+
+.products{
+  display: flex;
+  /* background: #000; */
+  flex-direction: row;
+   overflow-x: auto;
+  gap: 1vh;
+  border: 2px solid red;
+  margin: 10vh 0vh;
+}

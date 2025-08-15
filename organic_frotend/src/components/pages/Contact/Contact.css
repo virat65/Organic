@@ -1,0 +1,32 @@
+.contactBanner {
+  background-image: url("https://preview.colorlib.com/theme/ogani/img/breadcrumb.jpg.webp");
+  width: 100vw;
+  display: flex;
+  padding: 60px 20px;
+  /* border: 2px solid #7fad39; */
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 30vh;
+}
+
+
+.contactBanner h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.contact-details a svg{
+  font-size: 3rem;
+      color: #7fad39;
+}
+
+.contact-details  .text h3 {
+font-weight: 800;
+}
+
+.contact-message button{
+  width: 25vw;
+}
