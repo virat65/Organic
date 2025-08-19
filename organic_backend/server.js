@@ -10,7 +10,6 @@ dataBase();
 app.use(express.json());
 app.use(fileUpload())
 // app.use(express.urlencoded({ extended: true }));
-
 app.use("/api",userRouter)
 app.listen(port, () => {
   console.log(`server is running on the ${port}`);
