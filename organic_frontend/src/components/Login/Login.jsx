@@ -6,11 +6,11 @@ import { toast } from "react-toastify";
 import "./Login.css";
 import cookies from "js-cookie";
 
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [userData, setUserData] = useState("");
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   // const user = await axios.post(backendurl.login.url,userData)
   const handleChange = (e) => {
     console.log(e.target, "event target");
@@ -22,11 +22,20 @@ const Login = () => {
       const userDetails = await axios.post(backendurl.login.url, userData);
       console.log(userDetails, "userDetails");
       if (userDetails.data.status === 200) {
-        toast.success(userDetails.data.message);
+
         console.log(userDetails.data.body, "userDetails.data.body");
         cookies.set("userInfo", JSON.stringify(userDetails.data.body));
-        navigate("/");
-        window.location.reload()
+
+
+        toast.success(userDetails.data.message);
+
+        // Redirect after 1 sec
+        setTimeout(() => {
+          window.location.href="/"
+        }, 1000);
+
+
+
         console.log(userDetails.data.message);
         console.log("sucess");
       } else {

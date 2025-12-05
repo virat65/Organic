@@ -8,6 +8,7 @@ import { GiShoppingBag } from "react-icons/gi";
 import { FaHeart } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
+import { toast } from "react-toastify";
 import cookies from "js-cookie";
 import "./Navbar.css";
 const Navbar = () => {
@@ -81,7 +82,25 @@ const Navbar = () => {
             </div>
             <div className="col-3  d-flex  align-items-center justify-content-evenly ">
               <FaUser />
-              <a href="login">Login</a>
+
+              {availableCookie ? (
+                <a
+                  onClick={() => {
+                    cookies.remove("userInfo");
+
+                    // redirect after toast
+                    toast.success("Logout Successfully");
+                    setTimeout(() => {
+                      window.location.href = "/login";
+                    }, 1000);
+                  }}
+                >
+              
+                  Logout
+                </a>
+              ) : (
+                <a href="login">Login</a>
+              )}
             </div>
           </div>
         </div>
