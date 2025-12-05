@@ -75,30 +75,42 @@ const Contact = () => {
 
           <div className="contact-message d-flex justify-content-center my-5 ">
             <div className="row justify-content-center align-items-center  gap-5 ">
-              <h2 className=" justify-content-center d-flex  fs-1 fw-bold">Leave Message</h2>
-              <div class="row flex-row">
+              <h2 className=" justify-content-center d-flex  fs-1 fw-bold">
+                Leave Message
+              </h2>
+              <div className="row flex-row">
                 <form className=" ">
                   <div className="row justify-content-center">
-
-                  <div class="col-6 ">
-                    <input type="text" placeholder="Your name" className="w-100 border   "/>
-                  </div>
-                  <div class="col-6 " >
-                    <input type="text" placeholder="Your Email" className="w-100 border  "/>
-                  </div>
-                  </div>
-                  <div className="row justify-content-center">
-
-                  <div class="col-12 text-center px-2  my-5 ">
-                  <div class="form-floating   w-100vw">
-  <textarea className="form-control " placeholder="Leave a comment here" id="floatingTextarea2" style={{height: "100px"}}></textarea>
-  <label for="floatingTextarea2">Your Message</label>
-</div>
-                  </div>
+                    <div className="col-6 ">
+                      <input
+                        type="text"
+                        placeholder="Your name"
+                        className="w-100 border   "
+                      />
+                    </div>
+                    <div className="col-6 ">
+                      <input
+                        type="text"
+                        placeholder="Your Email"
+                        className="w-100 border  "
+                      />
+                    </div>
                   </div>
                   <div className="row justify-content-center">
-
-                    <button type="submit" class="site-btn pe-3">
+                    <div className="col-12 text-center px-2  my-5 ">
+                      <div className="form-floating   w-100vw">
+                        <textarea
+                          className="form-control "
+                          placeholder="Leave a comment here"
+                          id="floatingTextarea2"
+                          style={{ height: "100px" }}
+                        ></textarea>
+                        <label for="floatingTextarea2">Your Message</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row justify-content-center">
+                    <button type="submit" className="site-btn pe-3">
                       SEND MESSAGE
                     </button>
                   </div>

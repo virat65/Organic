@@ -8,9 +8,13 @@ import { GiShoppingBag } from "react-icons/gi";
 import { FaHeart } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
+import cookies from "js-cookie";
 import "./Navbar.css";
 const Navbar = () => {
   const [isMenuopen, setIsMenopen] = useState(false);
+  const getCookie = cookies.get("userInfo");
+  const availableCookie = getCookie ? JSON.parse(getCookie) : null;
+  console.log(availableCookie, "availableCookie");
   return (
     <>
       <div className="topbar container-fluid  px-5 py-2">
@@ -25,7 +29,11 @@ const Navbar = () => {
               </div>
               <div className="col-7    d-flex ">
                 {" "}
-                Free Shipping for all Order of $99
+                <h4 className="fw-bold text-decoration-underline">
+                  {availableCookie
+                    ? `Welcome ${availableCookie.name}`
+                    : `Welcome Guest`}
+                </h4>
               </div>
             </div>
           </div>
@@ -82,7 +90,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg ">
           <div className="row justify-content-between  w-100 ">
             <div className="col-3 logo-icon  d-flex justify-content-center  ">
-              <a className="navbar-brand" href="#">
+              <a className="navbar-brand" href="/">
                 <img
                   src="https://preview.colorlib.com/theme/ogani/img/logo.png.webp"
                   alt=""
@@ -108,37 +116,37 @@ const Navbar = () => {
                   </li>
                   <li className="nav-item">
                     <div
-                      class="collapse navbar-collapse"
+                      className="collapse navbar-collapse"
                       id="navbarNavDarkDropdown"
                     >
-                      <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
+                      <ul className="navbar-nav">
+                        <li className="nav-item dropdown">
                           <a
-                            class="nav-link dropdown-toggle"
+                            className="nav-link dropdown-toggle"
                             href="#"
                             id="navbarDarkDropdownMenuLink"
                             role="button"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                           Pages
+                            Pages
                           </a>
                           <ul
-                            class="dropdown-menu dropdown-menu-dark"
+                            className="dropdown-menu dropdown-menu-dark"
                             aria-labelledby="navbarDarkDropdownMenuLink"
                           >
                             <li>
-                              <a class="dropdown-item" href="shop">
-                              Shop
+                              <a className="dropdown-item" href="shop">
+                                Shop
                               </a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="blog">
-                               Blog
+                              <a className="dropdown-item" href="blog">
+                                Blog
                               </a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="contact">
+                              <a className="dropdown-item" href="contact">
                                 Contact
                               </a>
                             </li>

@@ -2,6 +2,7 @@ import userModel from "../Model/userModel.js";
 import bcrpyt from "bcrypt";
 import tokenGen from "../token/userToken.js";
 import imageUpload from "../userImageUpload/userImage.js";
+
 export const signup = async (req, res) => {
   try {
     const query = [];
@@ -52,7 +53,7 @@ export const signup = async (req, res) => {
       //-->Token End
       return res.json({
         message: "user created Successfully",
-        status: 201,
+        status: 200,
         success: true,
         body: user,
       });
